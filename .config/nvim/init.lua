@@ -1,5 +1,5 @@
 -- copying to shared clipboard 
-vim.opt.clipboard = "unnamed"
+-- vim.opt.clipboard = "unnamed"
 
 
 
@@ -252,7 +252,11 @@ if not vim.loop.fs_stat(lazypath) then
 		lazypath,
 	})
 end
+
 vim.opt.rtp:prepend(lazypath)
+-- Add fzf to the runtime path
+vim.opt.rtp:append("/opt/homebrew/opt/fzf")
+
 -- then, setup!
 require("lazy").setup({
 	-- main color scheme
@@ -344,7 +348,7 @@ require("lazy").setup({
 	{
 		'junegunn/fzf.vim',
 		dependencies = {
-			{ 'junegunn/fzf', dir = '~/.fzf', build = './install --all' },
+			{ 'junegunn/fzf', dir = '/opt/homebrew/opt/fzf', build = './install --all' },
 		},
 		config = function()
 			-- stop putting a giant window over my editor
