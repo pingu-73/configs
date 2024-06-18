@@ -1,0 +1,35 @@
+#yabai -m signal --add event=dock_did_restart action="sudo yabai --load-sa"
+#sudo yabai --load-sa
+
+yabai -m config layout bsp 
+yabai -m config auto_balance on
+yabai -m config focus_follows_mouse autoraise
+
+
+
+#yabai -m config mouse_action1 resize    #left click + drag
+#yabai -m config mouse-action2 move  #right click + drag
+yabai -m mouse_drop_action swap
+
+
+
+#yabai -m config window_placement second_child
+
+yabai -m config top_padding 11
+yabai -m config left_padding 11
+yabai -m config bottom_padding 11
+yabai -m config right_padding 11
+yabai -m config window_gap 11
+
+
+
+#yabai -m rule --add app="^System Settings$" sticky=on layer=above
+#yabai -m rule --add app="^Digital Color Meter$" sticky=on layer=ab
+
+
+
+#disable settings management by yabai
+yabai -m rule --add app="^System Settings$" layer=above manage=off
+yabai -m rule --add app="^Calculator$" layer=above manage=off
+yabai -m rule --add app="^QuickTime Player$" layer=above manage=off
+yabai -m rule --add app="^Finder$" layer=above manage=off
