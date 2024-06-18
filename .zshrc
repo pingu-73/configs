@@ -1,5 +1,8 @@
 # integrating fzf for zsh https://github.com/junegunn/fzf
 source <(fzf --zsh)
+# $(brew --prefix)/opt/fzf/install   # https://p.ip.fi/B7mZ
+# To use fzf in Vim, add the following line to your .vimrc:
+# set rtp+=/opt/homebrew/opt/fzf
 
 # activate the autosuggestions https://github.com/zsh-users/zsh-autosuggestions 
 source $(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh
@@ -56,3 +59,5 @@ fi
 
 # To use gnu commands with their normal names, you can add a "gnubin" directory to your PATH with:
 export PATH="/opt/homebrew/opt/coreutils/libexec/gnubin:$PATH"
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
