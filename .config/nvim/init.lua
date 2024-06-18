@@ -14,7 +14,6 @@ vim.g.mapleader = " "
 --
 -------------------------------------------------------------------------------
 -- never ever folding
--- never ever folding
 vim.opt.foldenable = false
 vim.opt.foldmethod = 'manual'
 vim.opt.foldlevelstart = 99
