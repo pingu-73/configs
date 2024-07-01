@@ -50,6 +50,9 @@ yellow = "0xfabd2f"
 background = "0x1d2021"
 foreground = "0xd5c4a1"
 
+[cursor]
+unfocused_hollow = true
+
 [font]
 size = 19.0
 
@@ -69,5 +72,8 @@ mods = "Alt"
 [scrolling]
 history = 0
 
-# [window]
+[window]
 # decorations = "none"
+padding = {x = 10, y =0}
+decorations = "Buttonless"
+# startup_mode = "Maximized" # "SimpleFullscreen"
