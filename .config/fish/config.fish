@@ -2,6 +2,7 @@ zoxide init fish | source
 
 abbr -a yr 'cal -y'
 abbr -a c cargo
+abbr -a vi nvim
 abbr -a e nvim
 abbr -a m make
 abbr -a o open
