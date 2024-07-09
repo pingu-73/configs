@@ -402,6 +402,12 @@ require("lazy").setup({
 				},
 			}
 
+			-- Zig ZLS(LSP)
+			lspconfig.zls.setup{
+				cmd = { "/Users/dikshant/zls/zig-out/bin/zls" },
+				filetypes = { "zig" },
+			}
+
 			-- Bash LSP
 			local configs = require 'lspconfig.configs'
 			if not configs.bash_lsp and vim.fn.executable('bash-language-server') == 1 then
