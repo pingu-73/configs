@@ -54,7 +54,7 @@ foreground = "0xd5c4a1"
 unfocused_hollow = true
 
 [font]
-size = 19.0
+size = 15.0
 
 [font.normal]
 family = "Noto Sans Mono"
@@ -70,10 +70,10 @@ key = "C"
 mods = "Alt"
 
 [scrolling]
-history = 0
+history = 10000
 
 [window]
 # decorations = "none"
-padding = {x = 10, y =0}
+padding = {x = 0, y =0}
 decorations = "Buttonless"
 # startup_mode = "Maximized" # "SimpleFullscreen"

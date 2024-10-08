@@ -61,3 +61,10 @@ fi
 export PATH="/opt/homebrew/opt/coreutils/libexec/gnubin:$PATH"
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
+# Created by `pipx` on 2024-07-13 02:27:51
+export PATH="$PATH:/Users/dikshant/.local/bin"
+
+# for vcpkg refer: https://learn.microsoft.com/en-gb/vcpkg/get_started/overview 
+export VCPKG_ROOT=/Users/dikshant/workspace/vcpkg
+export PATH=$VCPKG_ROOT:$PATH
